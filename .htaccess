@@ -1,0 +1,8 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+    deny from all
+</Files>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.ttps:/)(:80)? [NC]
+RewriteRule ^(.*) https://$1 [R=301,L]
+order deny,allow
