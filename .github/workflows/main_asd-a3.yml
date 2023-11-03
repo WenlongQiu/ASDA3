@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'ASD-A3'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B5DD71DB32AC416D84E677862DA98700 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B300E4E568E044D9B65FCB72141DA63B }}
           package: .
